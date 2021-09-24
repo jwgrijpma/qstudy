@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <config version="2.0" htmlParse="false">
+
+     <!-- title of the study -->
+     <item id="studyTitle">Q-Studie follow up</item>
+
+     <!-- text-align property(left|right) -->
+     <item id="textAlign">left</item>
+
+     <!-- shuffle cards (true|false) (4) -->
+     <item id="shuffleCards">true</item>
+
+     <!-- access code required (true|false) (5) -->
+     <item id="loginrequired">false</item>
+     <item id="clearCachePassword">cleareqmobilecache</item>
+     <!-- login with common password (leave blank if not required) -->
+     <item id="loginPassword"></item>
+    <item id="partNameRequired">false</item>
+      <!-- Use login script -->
+     <item id="useLogInScript">false</item>
+      <!-- URL to individual login script(leave blank if not required) -->
+     <item id="loginUrl"></item>
+     <!-- request mode (post|get) -->
+     <item id="loginUrlMethod"></item>
+
+     <item id="setConstantCardHeight">false</item>
+     <item id="constantCardHeight">150</item>
+     <item id="setConstantCardWidth">false</item>
+     <item id="constantCardWidth">200</item>
+     <!-- activate/deactivate optional steps (true|false) -->
+     <item id="showStep3">true</item>
+     <item id="showStep4">true</item>
+     <item id="showStep5">true</item>
+
+     <!-- HtmlQ only: disable the in-window back button -->
+     <item id="disableBackButton">false</item>
+
+     <!-- define form elements for step5; only displayed if showStep5 is true (delete tags if not required) -->
+     <!-- add label: <label>[STRING]</label> -->
+     <!-- add note: <note>[STRING]</note> -->
+     <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
+     <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
+     <item id="form">
+        <label>Leeftijd</label>
+        <note>Wat is je leeftijd?</note>
+        <input type="text" required="false" maxlength="100" ></input>
+
+        <label>Geslacht</label>
+        <note>Wat is je geslacht?</note>
+        <input type="radio" required="false">Man;Vrouw;Anders;Wil ik niet zeggen</input>
+
+        <label>Burgerlijke staat</label>
+        <note>Wat is je burgerlijke staat?</note>
+        <input type="radio" required="false">Ongehuwd;Gehuwd;Gescheiden;Weduwe / weduwnaar</input>
+
+        <label>Opleiding volgen</label>
+        <note>Volg je nog steeds de opleiding Geneeskunde?</note>
+        <input type="radio" required="false">Ja;Nee;Anders, namelijk (vul hieronder in)</input>
+
+        <label>Optioneel: Mijn toelating tot de studie was anders, namelijk...</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Eerdere studie</label>
+        <note>Heb je eerder een andere studie gevolgd?</note>
+        <input type="radio" required="false">Nee, geneeskunde was mijn eerste studie;Ja, dat was een universitaire studie, namelijk (vul hieronder in welke); Ja, dat was een hbo studie (vul hieronder in welke);Ja, anders, namelijk (vul hieronder in welke)</input>
+
+        <label>Optioneel: welke studie heb je eerder gevolgd? (Naam van studie + wo / hbo / ...)</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Studenten-vereniging</label>
+        <note>Ben je lid geworden van een studenten-vereniging?</note>
+        <input type="radio" required="false">Ja;Nee</input>
+
+        <label>Werk</label>
+        <note>Werk je op dit moment?</note>
+        <input type="radio" required="false">Ja, betaald werk;Ja, vrijwilligerswerk;Nee</input>
+
+        <label>Optioneel: Werk je? Zo ja, hoeveel uur per week werk je?</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Opleiding vader / verzorger 1</label>
+        <note>Wat is de hoogst voltooide opleiding van je vader / verzorger 1?</note>
+        <input type="radio" required="false">Geen / basisonderwijs;LBO / MAVO / (M)ULO;HAVO;Atheneum / Gymnasium / HBS;MBO;HBO;WO;Anders, namelijk</input>
+
+        <label>Optioneel: Mijn vader / verzorger 1 had een andere opleiding, namelijk...</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Opleiding moeder / verzorger 2</label>
+        <note>Wat is de hoogst voltooide opleiding van je moeder / verzorger 2?</note>
+        <input type="radio" required="false">Geen / basisonderwijs;LBO / MAVO / (M)ULO;HAVO;Atheneum / Gymnasium / HBS;MBO;HBO;WO;Anders, namelijk</input>
+
+        <label>Optioneel: Mijn moeder / verzorger 2 had een andere opleiding, namelijk...</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Geboorteland ouders / verzorgers</label>
+        <note>In welk land zijn je ouders / verzorgers geboren?</note>
+        <input type="radio" required="false"> Beiden in Nederland;Vader / Verzorger 1 in Nederland, moeder / verzorger 2 buiten Nederland, namelijk...;Moeder / verzorger 2 in Nederland, vader / verzorger 1 buiten Nederland, namelijk...;Beiden buiten Nederland, namelijk...</input>
+
+        <label>Optioneel: Geef aan in elk ander land dan Nederland je vader / verzorger 1 / moeder / verzorger 2 is geboren.</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Woonsituatie</label>
+        <note>Wat is je huidige woonsituatie?</note>
+        <input type="radio" required="false">Thuiswonend;Uitwonend</input>
+
+     </item>
+
+     <!-- URL for data transmission via POST/GET (leave blank if not required) -->
+     <item id="submitUrl">exe.php?do=save</item>
+  
+     <!-- request mode (post|get|firebase) -->
+     <item id="submitUrlMethod">firebase</item>
+  
+     <!-- data transmission via email, user must have an e-mail programm like Outlook (leave blank if not required) -->
+     <item id="submitMail">yourdomain.com</item>
+   </config>
