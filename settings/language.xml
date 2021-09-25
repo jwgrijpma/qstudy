@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <language version="1.0" htmlParse="true">
+;
+
+        <!-- misc -->
+        <item id="btnContinue">Ga verder</item>
+        <item id="btnclose">Sluit</item>
+        <item id="btnHelp">Help me!</item>
+        <item id="btnAgreement">Mee eens</item>
+        <item id="btnNeutral">Neutraal</item>
+        <item id="btnDisagreement">Mee oneens</item>
+        <item id="btnTransfer">Data opslaan</item>
+        <item id="btnExit">Afsluiten</item>
+        <item id="selectItem">Selecteer</item>
+        
+        <!-- Warning when user is trying to leave the page (this item was added for HtmlQ) -->
+        <item id="leaveSiteWarning">Als je nu afsluit verlies je je voortgang</item>
+
+        <!-- HtmlQ only: In-App Back Button -->
+        <item id="backButton">Terug</item>
+        <item id="fillInRequiredFields">Vul de verplichte velden in</item>
+
+        <!-- errors -->
+        <item id="errorHead">Error!</item>
+        <item id="errorWindowTooSmall">Please maximize your browser for using this application.</item>
+
+        <!-- welcome screen (leave blank to skip screen) -->
+        <item id="welcomeHead">Welkom!</item>
+        <item id="welcomeText">Welkom bij deze follow-up meting van je leervoorkeuren. Dank dat je mee wilt doen!{br}{br}
+
+{b}** Instructies **{/b}{br}
+1. Gebruik een PC of laptop voor deze meting. Smartphone/tablet werken wel, maar letters worden erg klein en het slepen wordt snel frustrerend.{br}
+2. Voordat je begint, {i}MAXIMALISEER{/i} dit venster in je browser en klik op {i}VERNIEUWEN{/i} (toetsenbord: F5){br}
+3. Voor iedere stap krijg je duidelijke instructies. Voer ze zo zorgvuldig mogelijk uit. Indien je vragen hebt, is er een 'help' knop aanwezig op verschillende pagina's. Stuur ons een reply via mail als je er niet uitkomt.{br}
+4. Klik op 'Ga verder' om te beginnen.
+</item>
+
+        <!-- user login, only displayed if access is restricted (see config-file) -->
+        <item id="loginHead">Toegangscode</item>
+        <item id="loginText">Gebruik de toegangscode om in te loggen</item>
+        <item id="loginFormHeader">Toegangscode</item>
+        <item id="loginPartIdText">Je naam of ID</item>
+        <item id="loginNoInput">Vul je toegangscode in</item>
+        <item id="loginInvalidInput">Toegangscode incorrect</item>
+        <item id="loginNoConnection">Connection to server failed. Probeer het opnieuw.</item>
+
+        <!-- introduction (leave blank to skip popup) -->
+        <item id="introHead">Toestemmingsverklaring</item>
+        <item id="introText">{b}Leervoorkeuren van studenten geneeskunde: een Q-studie{/b}{br}{br}
+
+-	Ik heb de informatie(brief) gelezen. Ik kon vragen stellen. Mijn vragen zijn voldoende beantwoord. Ik had genoeg tijd om over deelname te beslissen.{br}{br}
+-	Ik weet dat meedoen vrijwillig is en dat ik mijn toestemming kan intrekken op ieder moment van het onderzoek.  Daarvoor hoef ik geen reden te geven.{br}{br}
+-	Ik geef toestemming voor het verzamelen, bewaren en gebruiken van mijn gegevens voor de beantwoording van de onderzoeksvraag in dit onderzoek.{br}{br}
+-	Ik geef toestemming om mijn geanonimiseerde gegevens te gebruiken voor onderwijsdoeleinden.{br}{br}
+-	Ik weet dat alleen ter controle van de wetenschappelijk integriteit van het onderzoek sommige mensen toegang tot mijn gepseudonimiseerde gegevens kunnen krijgen.{br}{br}
+-	Ik kan mijn gegevens inzien en volledige inzage krijgen in de wijze waarop mijn gegevens worden verwerkt en bewaard.{br}{br}
+
+Voor akkoord kunt u hieronder op de knop "Ga verder" klikken.</item>
+
+        <!-- step1: rough sorting into three piles (leave blank to skip popup)-->
+        <item id="step1Head">Stap 1 van 5</item>
+        <item id="step1Text">Lees de volgende stellingen zorgvuldig door en verdeel ze in drie categorieen: stellingen waar je het duidelijk MEE ONEENS bent, stellingen waar je het duidelijk MEE EENS bent en een categorie NEUTRAAL voor de rest (bijvoorbeeld neutraal, onzeker of gemengde gevoelens). Er is geen maximum aantal stellingen per categorie; wees trouw aan je eigen voorkeuren.{br}{br}
+Je kan de kaarten naar de categorieen slepen of de toetsen 1, 2 en 3 van je toetsenbord gebruiken. Later kan je nog veranderingen aanbrengen in je keuzes.{br}{br} Als je deze instructie nog een keer wilt lezen, druk je op de 'help'-knop onder aan de pagina.{br}{br}
+{b}Neem de volgende vraag in je achterhoofd bij het rangschikken: "Welke voorkeuren heb ik {i}(of had ik){/i} voor het leren van de studiegroepbijeenkomsten van de Bachelor?"{/b}</item>
+
+        <!-- step2: sorting (leave blank to skip popup) -->
+        <item id="step2Head">Stap 2 van 5</item>
+        <item id="step2Text">Neem de stellingen uit de 'mee eens'-categorie en rangschrik ze aan de rechterkant van het score formulier. Bij 'kolom 5' komen de stellingen waar je het MEEST MEE EENS bent of welke je het MEEST BELANGRIJK vindt. Bij 'kolom 4' de stellingen waar je daarna het meest mee eens bent, dan 'kolom 3, 2, 1, ...' tot je stellingen uit de 'mee eens'-categorie op zijn.{br}{br}
+Neem daarna de stellingen uit de 'mee oneens'-categorie en rangschrik deze aan de linkerkant. Bij 'kolom -5' komen de stellingen waar je het MEEST MEE ONEENS bent. De stellingen waar je daarna het meest oneens bent, komen in 'kolom -4', dan '-3', en ga zo door tot deze stellingen ook op zijn.{br}{br}
+Neem als laatste de stellingen uit de 'neutraal'-categorie en rangschrik deze in de overgebleven hokjes op het veld. Waar je het iets meer mee eens bent, komen meer naar rechts. Waar je het iets meer oneens mee bent, komen meer naar links. LET OP: het is onze ervaring dat deelnemers hier soms het meest moeite mee hebben. Denk niet te lang na over deze categorie.{br}{br}
+Plaats de stellingen precies in de hokjes. Als alle stellingen correct geplaatst zijn, verschijnt de 'ga verder' knop.{br}{br} Als je deze instructie nog een keer wilt lezen, druk je op de 'help'-knop onder aan de pagina.{br}{br}</item>
+        <item id="step2CondOfInstruc">Rangschik de stellingen volgens jouw voorkeuren</item>
+        <item id="step2TextSizeLabel">Lettergrootte</item>
+        
+
+        <!-- step3: check sorting, only displayed if showStep3== true (see config-file; leave blank to skip popup)-->
+        <item id="step3Head">Stap 3 van 5</item>
+        <item id="step3Text">Goed gedaan! Nu heb je alle stellingen op het veld geplaatst. Kijk nog een keer naar je verdeling van de stellingen en verwissel posities van stellingen wanneer dit gewenst is door te slepen.</item>
+        <item id="step3CondOfInstruc">Controleer je rangschikking van de stellingen</item>
+
+        <!-- step4: comments on best/worst rated statements, only displayed if showStep4== true (see config-file; leave blank to skip popup) -->
+        <item id="step4Head">Stap 4 van 5</item>
+        <item id="step4Text">We willen je vragen om voor de stellingen die je bij MEEST MEE EENS en MEEST MEE ONEENS hebt geplaatst twee vragen te beantwoorden:{br}{br} 
+1. Wat maakt dat deze stellingen zo belangrijk voor je zijn?{br}
+2. Denk je dat je mening over deze stelling gedurende je Bachelor veranderd is, en zo ja, wat zorgde voor die verandering?{br}{br} Je antwoorden hier helpen ons om verdieping en begrip te krijgen voor jouw voorkeuren (wat is jouw motivatie en argumentatie). Wees vooral eerlijk hier en wees niet bang voor een veroordeling van ons. Ons doel is te leren.{br}{br} Als je deze instructie nog een keer wilt lezen, druk je op de 'help'-knop onder aan de pagina.{br}{br}</item>
+
+        <!-- step5: dditional questions, only displayed if showStep5== true (see config-file; leave blank to skip popup)-->
+        <item id="step5Head">Stap 5 van 5</item>
+        <item id="step5Text">Goed gedaan! Je bent bij de laatste stap aangekomen. Hier volgen nog een paar vragen en kun je je email adres invullen voor de BOL.COM bon.{br}{br}
+De laatste vraag van dit onderzoek is een uitnodiging voor een interview. We willen graag jou spreken over je ervaringen met de studiegroepen en hoe je voorkeuren veranderd zijn over de tijd. Dit gaat ons helpen om te evalueren of de studiegroepen goed aansluiten bij (mogelijk) veranderende voorkeuren en om eventuele aanpassingen te doen. Het interview is vrijwillig, en zal online of face-to-face plaatsvinden op een tijd en plek die jou uitkomen.</item>
+
+        <!-- data transfer, only displayed if submitUrl is not blank (see config-file) -->
+        <item id="transferHead">Data opslaan</item>
+        <item id="transferText">Je bent aan het einde gekomen van dit onderzoek. Door op de onderstaande knop 'Data opslaan' te klikken, voeg je de data toe in de database van het onderzoek. Wanneer je de data goed hebt toegevoegd, zullen wij de Bol.com bon sturen naar het opgegeven emailadres. De volgende pagina bevestigd of je data goed is opgeslagen.</item>
+        <item id="transferFailed">Data toevoegen is mislukt. Probeer het nog een keer.</item>
+        <item id="transferOk">Bedankt voor je deelname aan dit onderzoek! Je data is goed opgeslagen. We waarderen het enorm! {br}{br} Onze planning is dat we de Bol.com bonnen sturen als alle data verzameld is. We verwachten dat dit in november is. {br}{br}Als je nog vragen hebt, of eind november nog geen Bol.com bon ontvangen hebt, stuur een e-mail naar j.w.grijpma@vu.nl.</item>   
+   </language>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <config version="1.0" htmlParse="false">
+
+     <!-- title of the study -->
+     <item id="studyTitle">Q-followup25-9</item>
+
+     <!-- text-align property(left|right) -->
+     <item id="textAlign">left</item>
+
+     <!-- shuffle cards (true|false) (4) -->
+     <item id="shuffleCards">true</item>
+
+     <!-- access code required (true|false) (5) -->
+     <item id="loginrequired">false</item>
+     <item id="clearCachePassword">cleareqmobilecache</item>
+     <!-- login with common password (leave blank if not required) -->
+     <item id="loginPassword"></item>
+    <item id="partNameRequired">true</item>
+      <!-- Use login script -->
+     <item id="useLogInScript">false</item>
+      <!-- URL to individual login script(leave blank if not required) -->
+     <item id="loginUrl"></item>
+     <!-- request mode (post|get) -->
+     <item id="loginUrlMethod"></item>
+
+     <item id="setConstantCardHeight">false</item>
+     <item id="constantCardHeight">150</item>
+     <item id="setConstantCardWidth">false</item>
+     <item id="constantCardWidth">200</item>
+     <!-- activate/deactivate optional steps (true|false) -->
+     <item id="showStep3">true</item>
+     <item id="showStep4">true</item>
+     <item id="showStep5">true</item>
+
+     <!-- HtmlQ only: disable the in-window back button -->
+     <item id="disableBackButton">true</item>
+
+     <!-- define form elements for step5; only displayed if showStep5 is true (delete tags if not required) -->
+     <!-- add label: <label>[STRING]</label> -->
+     <!-- add note: <note>[STRING]</note> -->
+     <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
+     <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
+     <item id="form">
+        <label>Age</label>
+        <note>Wat is je leeftijd?</note>
+        <input type="text" required="true" maxlength="100" ></input>
+
+        <label>Sex</label>
+        <note>Wat is je geslacht?</note>
+        <input type="radio" required="true">Man;Vrouw;Anders</input>
+
+        <label>Burgerlijkestaat</label>
+        <note>Wat is je burgerlijke staat?</note>
+        <input type="radio" required="false">Ongehuwd;Gehuwd;Gescheiden;Weduwe / weduwnaar</input>
+
+        <label>Beantwoord de volgende vragen.</label>
+        <input type="rating2" required="true" scale="Ja;Nee">Volg je nog steeds de opleiding geneeskunde?;Ben je tijdens je studententijd lid geworden van een studentenvereniging?;Ben je thuiswonend?</input>
+
+        <label>Studiejaar</label>
+        <note>In welk studiejaar zit je nu?</note>
+        <input type="radio" required="true">Ma1;Ba3;Ba2;Anders, namelijk</input>
+
+        <label>(Optioneel) Toelichting op bovenstaande vraag</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Werk je op dit moment naast je studie?</label>
+        <input type="checkbox" required="true">Nee;Ja, betaald werk;Ja, vrijwiligerswerk</input>
+
+        <label>Als je hierboven 'ja' hebt ingevuld, hoeveel uur (gemiddeld) per week?</label>
+        <input type="textarea" required="false"></input>
+
+        <label>Contactinfo</label>
+        <note>Vul hieronder je emailadres in, waar we de Bol.com bon naartoe kunnen sturen</note>
+        <input type="text" required="true" maxlength="100000" ></input>
+
+        <label>interview</label>
+        <note>Om de data van deze meting beter te kunnen begrijpen, willen we je graag interviewen (op een tijd en plaats die voor jou uitkomt). Als je hiervoor open staat, vul dan hieronder nogmaals je emailadres in of je mobiele nummer. Dan nemen wij contact met je op.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+     </item>
+
+     <!-- URL for data transmission via POST/GET (leave blank if not required) -->
+     <item id="submitUrl">exe.php?do=save</item>
+  
+     <!-- request mode (post|get|firebase) -->
+     <item id="submitUrlMethod">firebase</item>
+  
+     <!-- data transmission via email, user must have an e-mail programm like Outlook (leave blank if not required) -->
+     <item id="submitMail">yourdomain.com</item>
+   </config>
